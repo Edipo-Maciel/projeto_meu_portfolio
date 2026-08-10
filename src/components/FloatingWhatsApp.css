@@ -1,0 +1,44 @@
+.floating-wa {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 40;
+  width: 3.35rem;
+  height: 3.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--color-whatsapp);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(31, 170, 89, 0.35);
+  opacity: 0;
+  transform: translateY(0.75rem) scale(0.92);
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s var(--ease-out);
+}
+
+.floating-wa.is-visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.floating-wa:hover {
+  color: #fff;
+  filter: brightness(1.05);
+}
+
+@media (min-width: 960px) {
+  .floating-wa {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-wa {
+    transition: none;
+  }
+}

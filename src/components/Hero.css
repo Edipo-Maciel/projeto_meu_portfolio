@@ -1,0 +1,125 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--space-7) var(--space-6);
+  background: linear-gradient(155deg, #000d1a 0%, #001529 42%, #0a3a6b 78%, #1e90ff 145%);
+  color: var(--color-on-dark);
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 55% at 90% 10%, rgba(77, 183, 255, 0.28), transparent 55%),
+    radial-gradient(ellipse 50% 60% at 5% 90%, rgba(30, 144, 255, 0.18), transparent 55%);
+}
+
+.hero__layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.hero__copy {
+  max-width: 36rem;
+  animation: hero-in 0.75s var(--ease-out) both;
+}
+
+.hero__brand {
+  margin-bottom: var(--space-4);
+}
+
+.hero__logo {
+  width: min(18rem, 78vw);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.28));
+}
+
+.hero__headline {
+  font-size: var(--text-3xl);
+  max-width: 13ch;
+  margin-bottom: var(--space-4);
+  color: var(--color-on-dark);
+}
+
+.hero__support {
+  font-size: var(--text-lg);
+  color: var(--color-on-dark-muted);
+  max-width: 38ch;
+  margin-bottom: var(--space-6);
+}
+
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.hero__cta .btn--ghost {
+  color: var(--color-on-dark);
+  border-color: rgba(244, 248, 249, 0.35);
+}
+
+.hero__cta .btn--ghost:hover {
+  background: rgba(244, 248, 249, 0.08);
+  color: var(--color-on-dark);
+}
+
+.hero__location {
+  font-size: var(--text-sm);
+  color: var(--color-on-dark-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hero__visual {
+  animation: hero-in 0.85s var(--ease-out) 0.08s both;
+}
+
+.hero__frame {
+  transform: perspective(1400px) rotateY(-4deg) rotateX(2deg);
+  transform-origin: center left;
+}
+
+@media (max-width: 959px) {
+  .hero__frame {
+    transform: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .hero {
+    min-height: calc(100svh - var(--header-h));
+    display: grid;
+    align-items: center;
+    padding-block: var(--space-6);
+  }
+
+  .hero__layout {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: var(--space-6);
+  }
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__copy,
+  .hero__visual {
+    animation: none;
+  }
+}
