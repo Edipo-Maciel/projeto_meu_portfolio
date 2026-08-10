@@ -8,9 +8,9 @@ import { FloatingWhatsApp } from './components/FloatingWhatsApp'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
-import { Industries } from './components/Industries'
 import { Process } from './components/Process'
 import { ProofStrip } from './components/ProofStrip'
+import { StoryBanner } from './components/StoryBanner'
 import { CaseDetailPage } from './pages/CaseDetailPage'
 
 function HomePage() {
@@ -33,7 +33,7 @@ function HomePage() {
         <Hero />
         <ProofStrip />
         <Audience />
-        <Industries />
+        <StoryBanner />
         <Capabilities />
         <Process />
         <CaseStudy />

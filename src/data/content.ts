@@ -44,33 +44,51 @@ export const audience = {
   text: 'Se a sua operação cresceu e o controle ficou espalhado (WhatsApp, Excel, papel), dá para organizar isso em um sistema só — feito para a sua rotina, não o contrário.',
 } as const
 
-export const industries = {
+export const storyBanner = {
   id: 'ramos',
   eyebrow: 'Para qualquer ramo',
-  title: 'O problema é seu. A solução a gente monta.',
-  lead:
-    'Não importa o segmento: se a operação precisa de controle, eu desenvolvo o sistema sob medida — do jeito que o seu negócio funciona.',
-  items: [
+  title: 'Frases de efeito. Problemas reais. Solução sob medida.',
+  footer:
+    'Para qualquer ramo — a gente monta a solução do seu problema.',
+  cta: 'Quero a solução no WhatsApp',
+  slides: [
     {
-      title: 'Barbearia',
-      text: 'Agenda, clientes, comissões e caixa no ritmo da cadeira.',
-      image: '/ramos/barbearia.jpg',
-      alt: 'Ilustração de uma barbearia no estilo visual da marca',
+      id: 'acessorios',
+      headline: 'Quer automatizar as vendas da sua loja de acessórios?',
+      support:
+        'Quer um sistema de vendas de capinhas e acessórios? Sai do caos das mensagens. Controle estoque, pedidos e atendimento em um sistema só.',
+      before: {
+        src: '/ramos/stories/celular-antes.jpg',
+        alt: 'Vendedor sobrecarregado com muitas mensagens na loja de acessórios',
+        label: 'Antes',
+        caption: 'Vendedor agoniado com tanta mensagem',
+      },
+      after: {
+        src: '/ramos/stories/celular-depois.jpg',
+        alt: 'Vendedor finalizando vendas com calma usando o sistema',
+        label: 'Depois',
+        caption: 'Vendas fluindo com o sistema',
+      },
     },
     {
-      title: 'Acessórios de celular',
-      text: 'Estoque, vendas, trocas e reposição sem perder o fio.',
-      image: '/ramos/acessorios-celular.jpg',
-      alt: 'Ilustração de loja de acessórios de celular no estilo visual da marca',
-    },
-    {
-      title: 'Mecânica de moto',
-      text: 'Ordens de serviço, peças, prazos e acompanhamento do conserto.',
-      image: '/ramos/mecanica-moto.jpg',
-      alt: 'Ilustração de oficina de motos no estilo visual da marca',
+      id: 'oficina',
+      headline: 'Quer organizar a fila da sua oficina mecânica?',
+      support:
+        'Quer um sistema para automatizar a fila da sua oficina? Menos espera, ordem de serviço no fluxo — e cliente saindo satisfeito.',
+      before: {
+        src: '/ramos/stories/oficina-antes.jpg',
+        alt: 'Mecânico sobrecarregado e fila de clientes insatisfeitos',
+        label: 'Antes',
+        caption: 'Fila parada, mecânico sem fôlego',
+      },
+      after: {
+        src: '/ramos/stories/oficina-depois.jpg',
+        alt: 'Mecânico aliviado e clientes satisfeitos com o sistema de fila',
+        label: 'Depois',
+        caption: 'Fila organizada, clientes satisfeitos',
+      },
     },
   ],
-  note: 'Logística, comércio, serviços, clínicas, oficinas… se tem rotina e dor operacional, dá para virar sistema.',
 } as const
 
 export const capabilities = {
