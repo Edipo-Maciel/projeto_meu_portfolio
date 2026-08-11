@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset'
+
 export const site = {
   brand: 'Maciel Sistemas',
   owner: 'Édipo Maciel',
@@ -27,7 +29,7 @@ export const hero = {
   ctaPrimary: 'Quero conversar no WhatsApp',
   ctaSecondary: 'Enviar e-mail',
   location: 'Manaus – AM',
-  mockupSrc: '/case/painel-entregas.png',
+  mockupSrc: asset('/case/painel-entregas.png'),
   mockupAlt: 'Painel das entregas do sistema em tempo real',
 } as const
 
@@ -44,13 +46,13 @@ export const heroCarousel = {
       support:
         'Case real: acompanhamento das entregas em tempo real e faturamento automatizado — sem planilha e sem muro.',
       before: {
-        src: '/ramos/stories/transportadora-antes.jpg',
+        src: asset('/ramos/stories/transportadora-antes.jpg'),
         alt: 'Operação de transportadora controlada em quadro e papel',
         label: 'Antes',
         caption: 'Quadro e papel no dia a dia',
       },
       after: {
-        src: '/ramos/stories/transportadora-depois.jpg',
+        src: asset('/ramos/stories/transportadora-depois.jpg'),
         alt: 'Operação de transportadora com sistema de entregas e faturamento',
         label: 'Depois',
         caption: 'Entregas e faturamento no sistema',
@@ -63,13 +65,13 @@ export const heroCarousel = {
       support:
         'Quer um sistema de vendas de capinhas e acessórios? Sai do caos das mensagens. Controle estoque, pedidos e atendimento em um sistema só.',
       before: {
-        src: '/ramos/stories/celular-antes.jpg',
+        src: asset('/ramos/stories/celular-antes.jpg'),
         alt: 'Vendedor sobrecarregado com muitas mensagens na loja de acessórios',
         label: 'Antes',
         caption: 'Vendedor agoniado com tanta mensagem',
       },
       after: {
-        src: '/ramos/stories/celular-depois.jpg',
+        src: asset('/ramos/stories/celular-depois.jpg'),
         alt: 'Vendedor finalizando vendas com calma usando o sistema',
         label: 'Depois',
         caption: 'Vendas fluindo com o sistema',
@@ -82,13 +84,13 @@ export const heroCarousel = {
       support:
         'Quer um sistema para automatizar a fila da sua oficina? Menos espera, ordem de serviço no fluxo — e cliente saindo satisfeito.',
       before: {
-        src: '/ramos/stories/oficina-antes.jpg',
+        src: asset('/ramos/stories/oficina-antes.jpg'),
         alt: 'Mecânico sobrecarregado e fila de clientes insatisfeitos',
         label: 'Antes',
         caption: 'Fila parada, mecânico sem fôlego',
       },
       after: {
-        src: '/ramos/stories/oficina-depois.jpg',
+        src: asset('/ramos/stories/oficina-depois.jpg'),
         alt: 'Mecânico aliviado e clientes satisfeitos com o sistema de fila',
         label: 'Depois',
         caption: 'Fila organizada, clientes satisfeitos',
@@ -178,7 +180,7 @@ export const caseStudy = {
   title: 'Transportadora local — logística de containers em Manaus',
   teaser:
     'Sistema sob medida para rastrear entregas, gerar faturamento e organizar o pagamento dos motoristas — saindo da planilha para a operação em tempo real.',
-  coverSrc: '/case/painel-entregas.png',
+  coverSrc: asset('/case/painel-entregas.png'),
   coverAlt: 'Painel das entregas em tempo real',
   ctaDetail: 'Ver detalhes do case',
   challenge: {
@@ -201,55 +203,55 @@ export const caseStudy = {
   tech: ['React.js', 'NestJS'],
   shots: [
     {
-      src: '/case/login.png',
+      src: asset('/case/login.png'),
       alt: 'Tela de acesso do sistema de logística',
       category: 'geral' as ShotCategory,
       label: 'Login e áreas de acesso',
     },
     {
-      src: '/case/painel-entregas.png',
+      src: asset('/case/painel-entregas.png'),
       alt: 'Painel das entregas em tempo real',
       category: 'operacao' as ShotCategory,
       label: 'Painel das entregas',
     },
     {
-      src: '/case/clientes.png',
+      src: asset('/case/clientes.png'),
       alt: 'Cadastro de clientes',
       category: 'cadastros' as ShotCategory,
       label: 'Cadastro de clientes',
     },
     {
-      src: '/case/motoristas.png',
+      src: asset('/case/motoristas.png'),
       alt: 'Cadastro de motoristas',
       category: 'cadastros' as ShotCategory,
       label: 'Cadastro de motoristas',
     },
     {
-      src: '/case/veiculos.png',
+      src: asset('/case/veiculos.png'),
       alt: 'Cadastro de veículos',
       category: 'cadastros' as ShotCategory,
       label: 'Cadastro de veículos',
     },
     {
-      src: '/case/propostas.png',
+      src: asset('/case/propostas.png'),
       alt: 'Gestão de propostas comerciais',
       category: 'cadastros' as ShotCategory,
       label: 'Propostas',
     },
     {
-      src: '/case/importacoes.png',
+      src: asset('/case/importacoes.png'),
       alt: 'Programação de importações',
       category: 'operacao' as ShotCategory,
       label: 'Importações',
     },
     {
-      src: '/case/relatorios.png',
+      src: asset('/case/relatorios.png'),
       alt: 'Relatório de serviços por motorista',
       category: 'relatorios' as ShotCategory,
       label: 'Relatório por motorista',
     },
     {
-      src: '/case/faturamento.png',
+      src: asset('/case/faturamento.png'),
       alt: 'Faturamento para clientes',
       category: 'faturamento' as ShotCategory,
       label: 'Faturamento',

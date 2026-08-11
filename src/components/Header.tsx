@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { navLinks, site } from '../data/content'
+import { asset } from '../lib/asset'
 import { WhatsAppButton } from './WhatsAppButton'
 import './Header.css'
 
@@ -37,7 +38,7 @@ export function Header() {
       <div className="container header__inner">
         <Link className="header__brand" to="/#topo" onClick={close}>
           <img
-            src="/brand/logo-header.png"
+            src={asset('/brand/logo-header.png')}
             alt={site.brand}
             className="header__logo"
             width={180}

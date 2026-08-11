@@ -1,4 +1,5 @@
 import { site } from '../data/content'
+import { asset } from '../lib/asset'
 import './Footer.css'
 
 export function Footer() {
@@ -9,7 +10,7 @@ export function Footer() {
       <div className="container footer__inner">
         <div>
           <img
-            src="/brand/logo-header-light.png"
+            src={asset('/brand/logo-header-light.png')}
             alt={site.brand}
             className="footer__logo"
             width={160}

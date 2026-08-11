@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type TouchEvent, type TransitionEvent } from 'react'
 import { hero, heroCarousel, site } from '../data/content'
+import { asset } from '../lib/asset'
 import { BrowserFrame } from './BrowserFrame'
 import { WhatsAppButton } from './WhatsAppButton'
 import './Hero.css'
@@ -181,7 +182,7 @@ function ProductSlide() {
       <div className="hero__copy">
         <p id="hero-brand" className="hero__brand">
           <img
-            src="/brand/logo-header-light.png"
+            src={asset('/brand/logo-header-light.png')}
             alt={hero.brand}
             className="hero__logo"
             width={280}

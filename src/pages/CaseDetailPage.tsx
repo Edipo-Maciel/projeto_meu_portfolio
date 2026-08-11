@@ -6,6 +6,7 @@ import {
   site,
   type ShotCategory,
 } from '../data/content'
+import { asset } from '../lib/asset'
 import { BrowserFrame } from '../components/BrowserFrame'
 import { WhatsAppButton } from '../components/WhatsAppButton'
 import './CaseDetailPage.css'
@@ -34,7 +35,7 @@ export function CaseDetailPage() {
         <div className="container case-detail__top-inner">
           <Link to="/" className="case-detail__brand">
             <img
-              src="/brand/logo-header-light.png"
+              src={asset('/brand/logo-header-light.png')}
               alt={site.brand}
               width={160}
               height={48}
