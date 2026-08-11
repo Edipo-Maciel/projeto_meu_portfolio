@@ -12,7 +12,7 @@ export const site = {
 } as const
 
 export const navLinks = [
-  { href: '#ramos', label: 'Ramos' },
+  { href: '#topo', label: 'Ramos' },
   { href: '#capacidades', label: 'O que entrego' },
   { href: '#como-trabalho', label: 'Como trabalho' },
   { href: '#case', label: 'Case' },
@@ -23,7 +23,7 @@ export const hero = {
   brand: 'Maciel Sistemas',
   headline: 'Sistemas feitos sob medida para o seu negócio',
   support:
-    'Você não precisa se adaptar a um software genérico. Eu monto o sistema do jeito que a sua operação precisa — com o que importa no dia a dia.',
+    'Você não precisa de um software pronto e que não resolve seu problema, você precisa de um sistema para resolver o SEU PROBLEMA REAL!',
   ctaPrimary: 'Quero conversar no WhatsApp',
   ctaSecondary: 'Enviar e-mail',
   location: 'Manaus – AM',
@@ -31,29 +31,34 @@ export const hero = {
   mockupAlt: 'Painel das entregas do sistema em tempo real',
 } as const
 
-export const proofStrip = [
-  'Case real em produção',
-  'React + NestJS',
-  'Manaus – AM',
-  'Sistemas sob medida',
-] as const
-
-export const audience = {
-  id: 'para-quem',
-  title: 'Para empresas que já sentem que planilha e quadro não dão conta',
-  text: 'Se a sua operação cresceu e o controle ficou espalhado (WhatsApp, Excel, papel), dá para organizar isso em um sistema só — feito para a sua rotina, não o contrário.',
-} as const
-
-export const storyBanner = {
-  id: 'ramos',
-  eyebrow: 'Para qualquer ramo',
-  title: 'Frases de efeito. Problemas reais. Solução sob medida.',
-  footer:
-    'Para qualquer ramo — a gente monta a solução do seu problema.',
-  cta: 'Quero a solução no WhatsApp',
+export const heroCarousel = {
   slides: [
     {
+      id: 'produto',
+      type: 'product' as const,
+    },
+    {
+      id: 'transportadora',
+      type: 'story' as const,
+      headline: 'Saiu do quadro e do papel. Entrou no sistema.',
+      support:
+        'Case real: acompanhamento das entregas em tempo real e faturamento automatizado — sem planilha e sem muro.',
+      before: {
+        src: '/ramos/stories/transportadora-antes.jpg',
+        alt: 'Operação de transportadora controlada em quadro e papel',
+        label: 'Antes',
+        caption: 'Quadro e papel no dia a dia',
+      },
+      after: {
+        src: '/ramos/stories/transportadora-depois.jpg',
+        alt: 'Operação de transportadora com sistema de entregas e faturamento',
+        label: 'Depois',
+        caption: 'Entregas e faturamento no sistema',
+      },
+    },
+    {
       id: 'acessorios',
+      type: 'story' as const,
       headline: 'Quer automatizar as vendas da sua loja de acessórios?',
       support:
         'Quer um sistema de vendas de capinhas e acessórios? Sai do caos das mensagens. Controle estoque, pedidos e atendimento em um sistema só.',
@@ -72,6 +77,7 @@ export const storyBanner = {
     },
     {
       id: 'oficina',
+      type: 'story' as const,
       headline: 'Quer organizar a fila da sua oficina mecânica?',
       support:
         'Quer um sistema para automatizar a fila da sua oficina? Menos espera, ordem de serviço no fluxo — e cliente saindo satisfeito.',
@@ -89,6 +95,19 @@ export const storyBanner = {
       },
     },
   ],
+} as const
+
+export const proofStrip = [
+  'Case real em produção',
+  'React + NestJS',
+  'Manaus – AM',
+  'Sistemas sob medida',
+] as const
+
+export const audience = {
+  id: 'para-quem',
+  title: 'Para empresas que já sentem que planilha e quadro não dão conta',
+  text: 'Se a sua operação cresceu e o controle ficou espalhado (WhatsApp, Excel, papel), dá para organizar isso em um sistema só — feito para a sua rotina, não o contrário.',
 } as const
 
 export const capabilities = {
