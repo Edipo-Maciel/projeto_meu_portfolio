@@ -26,54 +26,6 @@ export function Hero() {
 
   positionRef.current = position
 
-  // #region agent log
-  useEffect(() => {
-    const slidesEls = Array.from(document.querySelectorAll('.hero__slide')) as HTMLElement[]
-    const slide = document.querySelector('.hero__slide.is-active') as HTMLElement | null
-    const layout = document.querySelector('.hero__slide.is-active .hero__layout') as HTMLElement | null
-    const visual = document.querySelector('.hero__slide.is-active .hero__visual') as HTMLElement | null
-    const frameImg = document.querySelector('.hero__slide.is-active .hero__frame img') as HTMLImageElement | null
-    const storyImgs = Array.from(
-      document.querySelectorAll('.hero__slide.is-active .hero__shot img'),
-    ) as HTMLImageElement[]
-    const payload = {
-      sessionId: 'd7aba3',
-      runId: 'post-fix-3',
-      hypothesisId: 'unequal-slide-heights',
-      location: 'Hero.tsx:measure',
-      message: 'compare all slide heights',
-      data: {
-        href: window.location.href,
-        viewportW: window.innerWidth,
-        position,
-        realIndex,
-        activeSlideH: slide?.clientHeight ?? null,
-        activeLayoutH: layout?.clientHeight ?? null,
-        activeVisualH: visual?.clientHeight ?? null,
-        visualCssH: visual ? getComputedStyle(visual).height : null,
-        allSlideHeights: slidesEls.map((el, i) => ({
-          i,
-          h: el.clientHeight,
-          layoutH: el.querySelector('.hero__layout')?.clientHeight ?? null,
-          visualH: el.querySelector('.hero__visual')?.clientHeight ?? null,
-        })),
-        heightSpread: (() => {
-          const hs = slidesEls.map((el) => el.clientHeight)
-          return hs.length ? Math.max(...hs) - Math.min(...hs) : null
-        })(),
-        frameImgH: frameImg?.clientHeight ?? null,
-        storyImgHs: storyImgs.map((img) => img.clientHeight),
-      },
-      timestamp: Date.now(),
-    }
-    fetch('http://127.0.0.1:7857/ingest/36abb7c0-a11a-496e-a893-76467676721f', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'X-Debug-Session-Id': 'd7aba3' },
-      body: JSON.stringify(payload),
-    }).catch(() => {})
-  }, [position, viewportWidth, realIndex])
-  // #endregion
-
   useEffect(() => {
     const viewport = viewportRef.current
     if (!viewport) return
