@@ -4,7 +4,7 @@ import { BrowserFrame } from './BrowserFrame'
 import { WhatsAppButton } from './WhatsAppButton'
 import './Hero.css'
 
-const AUTOPLAY_MS = 3000
+const AUTOPLAY_MS = 8000
 const TRANSITION_MS = 1100
 
 type StorySlide = Extract<(typeof heroCarousel.slides)[number], { type: 'story' }>
