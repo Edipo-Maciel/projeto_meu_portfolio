@@ -1,16 +1,15 @@
 .case {
-  background: linear-gradient(180deg, #000d1a 0%, #001529 55%, #0a3a6b 100%);
-  color: var(--color-on-dark);
+  background: var(--color-surface);
 }
 
 .case__eyebrow {
-  color: var(--color-amber);
+  color: var(--color-accent);
 }
 
 .case__title,
 .case .section__title {
-  color: var(--color-on-dark);
-  max-width: 22ch;
+  color: var(--color-ink);
+  max-width: 24ch;
 }
 
 .case__teaser {
@@ -20,10 +19,11 @@
 }
 
 .case__teaser-text {
-  color: var(--color-on-dark-muted);
+  color: var(--color-muted);
   font-size: var(--text-lg);
   max-width: 42ch;
   margin-bottom: var(--space-5);
+  line-height: 1.7;
 }
 
 .case__teaser-cta {

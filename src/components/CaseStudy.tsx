@@ -16,7 +16,7 @@ export function CaseStudy() {
             </h2>
             <p className="case__teaser-text">{caseStudy.teaser}</p>
             <Link to="/case" className="btn btn--primary case__teaser-cta">
-              {caseStudy.ctaDetail}
+              {caseStudy.ctaDetail} →
             </Link>
           </Reveal>
         </div>

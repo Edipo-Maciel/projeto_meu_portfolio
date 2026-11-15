@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { navLinks, site } from '../data/content'
 import { asset } from '../lib/asset'
-import { WhatsAppButton } from './WhatsAppButton'
 import './Header.css'
 
 function resolveHref(href: string, pathname: string) {
@@ -32,6 +31,7 @@ export function Header() {
   }, [open])
 
   const close = () => setOpen(false)
+  const contactHref = resolveHref('#contato', location.pathname)
 
   return (
     <header className={`header ${scrolled ? 'header--scrolled' : ''}`.trim()}>
@@ -58,7 +58,9 @@ export function Header() {
         </nav>
 
         <div className="header__actions">
-          <WhatsAppButton label="WhatsApp" variant="primary" className="header__cta" />
+          <Link to={contactHref} className="btn btn--primary header__cta">
+            Fale agora →
+          </Link>
           <button
             type="button"
             className={`header__menu-btn ${open ? 'is-open' : ''}`}
@@ -88,7 +90,9 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <WhatsAppButton label="Quero conversar no WhatsApp" variant="whatsapp" />
+          <Link to={contactHref} className="btn btn--primary" onClick={close}>
+            Fale agora →
+          </Link>
         </nav>
       </div>
     </header>

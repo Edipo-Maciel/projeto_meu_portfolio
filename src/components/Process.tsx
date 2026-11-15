@@ -7,7 +7,7 @@ export function Process() {
     <section id={process.id} className="section process" aria-labelledby="process-title">
       <div className="container">
         <Reveal>
-          <p className="section__eyebrow">Método</p>
+          <p className="section__eyebrow">{process.eyebrow}</p>
           <h2 id="process-title" className="section__title">
             {process.title}
           </h2>

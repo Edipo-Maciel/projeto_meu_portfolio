@@ -10,7 +10,7 @@ export function Footer() {
       <div className="container footer__inner">
         <div>
           <img
-            src={asset('/brand/logo-header-light.png')}
+            src={asset('/brand/logo-header.png')}
             alt={site.brand}
             className="footer__logo"
             width={160}
@@ -25,10 +25,10 @@ export function Footer() {
           <p className="footer__stack">{site.stack.join(' · ')}</p>
           <p className="footer__links">
             <a href={site.whatsappUrl} target="_blank" rel="noopener noreferrer">
-              WhatsApp
+              WhatsApp ↗
             </a>
             <span aria-hidden="true">·</span>
-            <a href={site.emailUrl}>E-mail</a>
+            <a href={site.emailUrl}>E-mail ↗</a>
           </p>
           <p className="footer__copy">
             © {year} {site.brand}

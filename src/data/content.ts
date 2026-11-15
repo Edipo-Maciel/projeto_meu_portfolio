@@ -14,7 +14,7 @@ export const site = {
 } as const
 
 export const navLinks = [
-  { href: '#topo', label: 'Ramos' },
+  { href: '#topo', label: 'Início' },
   { href: '#capacidades', label: 'O que entrego' },
   { href: '#como-trabalho', label: 'Como trabalho' },
   { href: '#case', label: 'Case' },
@@ -23,11 +23,13 @@ export const navLinks = [
 
 export const hero = {
   brand: 'Maciel Sistemas',
-  headline: 'Sistemas feitos sob medida para o seu negócio',
+  eyebrow: 'Sistemas sob medida',
+  headline: 'Sistemas feitos sob medida',
+  headlineAccent: 'para o seu negócio',
   support:
     'Você não precisa de um software pronto e que não resolve seu problema, você precisa de um sistema para resolver o SEU PROBLEMA REAL!',
-  ctaPrimary: 'Quero conversar no WhatsApp',
-  ctaSecondary: 'Enviar e-mail',
+  ctaPrimary: 'Quero conversar agora →',
+  ctaSecondary: 'Ver como trabalho',
   location: 'Manaus – AM',
   mockupSrc: asset('/case/painel-entregas.png'),
   mockupAlt: 'Painel das entregas do sistema em tempo real',
@@ -108,12 +110,15 @@ export const proofStrip = [
 
 export const audience = {
   id: 'para-quem',
+  eyebrow: 'Para quem é',
   title: 'Para empresas que já sentem que planilha e quadro não dão conta',
+  titleAccent: 'não dão conta',
   text: 'Se a sua operação cresceu e o controle ficou espalhado (WhatsApp, Excel, papel), dá para organizar isso em um sistema só — feito para a sua rotina, não o contrário.',
 } as const
 
 export const capabilities = {
   id: 'capacidades',
+  eyebrow: 'Capacidades',
   title: 'O que o seu sistema pode resolver',
   lead: 'Cada módulo nasce da operação real — não de um template genérico.',
   items: [
@@ -138,6 +143,7 @@ export const capabilities = {
 
 export const process = {
   id: 'como-trabalho',
+  eyebrow: 'Método',
   title: 'Do jeito que o cliente precisa',
   intro: 'Meu diferencial: não é “um sistema pronto”. É o seu sistema.',
   steps: [
@@ -261,7 +267,10 @@ export const caseStudy = {
 
 export const contact = {
   id: 'contato',
-  title: 'Vamos montar o sistema da sua empresa?',
-  text: 'Me conta como a operação funciona hoje. A gente vê o que faz sentido automatizar e eu te mostro um caminho claro.',
-  cta: 'Chamar no WhatsApp',
+  eyebrow: 'Fale comigo',
+  title: 'Se o sistema da sua operação faz sentido,',
+  titleAccent: 'a próxima etapa é simples.',
+  text: 'Uma conversa. Sem proposta no primeiro contato e sem compromisso. Me conta como a operação funciona hoje — a gente vê o que faz sentido automatizar.',
+  cta: 'Quero conversar agora →',
+  microcopy: 'Sem spam. Prometemos.',
 } as const

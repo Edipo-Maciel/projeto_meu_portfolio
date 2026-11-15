@@ -35,7 +35,7 @@ export function CaseDetailPage() {
         <div className="container case-detail__top-inner">
           <Link to="/" className="case-detail__brand">
             <img
-              src={asset('/brand/logo-header-light.png')}
+              src={asset('/brand/logo-header.png')}
               alt={site.brand}
               width={160}
               height={48}

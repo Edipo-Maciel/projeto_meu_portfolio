@@ -34,7 +34,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-teal);
+  color: var(--color-accent);
 }
 
 :focus-visible {
@@ -47,8 +47,8 @@ h2,
 h3 {
   font-family: var(--font-display);
   font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: 0.01em;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
   text-transform: none;
   margin: 0;
   color: var(--color-ink);
@@ -82,26 +82,36 @@ button {
 }
 
 .section__eyebrow {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
   font-size: var(--text-xs);
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-teal);
-  margin-bottom: var(--space-3);
+  color: var(--color-accent);
+  background: var(--color-teal-soft);
+  border: 1px solid rgba(0, 87, 255, 0.18);
+  margin-bottom: var(--space-4);
 }
 
 .section__title {
   font-size: var(--text-2xl);
-  max-width: 20ch;
+  max-width: 28ch;
   margin-bottom: var(--space-4);
+}
+
+.section__title-accent {
+  color: var(--color-accent);
 }
 
 .section__lead {
   color: var(--color-muted);
   font-size: var(--text-lg);
-  max-width: 44ch;
+  max-width: 48ch;
   margin-bottom: var(--space-6);
+  line-height: 1.7;
 }
 
 .btn {
@@ -110,7 +120,7 @@ button {
   justify-content: center;
   gap: 0.5rem;
   min-height: 3rem;
-  padding: 0.75rem 1.35rem;
+  padding: 0.75rem 1.4rem;
   border-radius: var(--radius-md);
   font-weight: 600;
   font-size: var(--text-sm);
@@ -130,25 +140,26 @@ button {
 }
 
 .btn--primary {
-  background: linear-gradient(135deg, #1e90ff 0%, #4db7ff 100%);
+  background: var(--color-accent);
   color: #fff;
-  box-shadow: 0 10px 28px rgba(30, 144, 255, 0.32);
+  box-shadow: 0 12px 28px rgba(0, 87, 255, 0.28);
 }
 
 .btn--primary:hover {
-  background: linear-gradient(135deg, #0f78e0 0%, #1e90ff 100%);
+  background: var(--color-amber-hover);
   color: #fff;
 }
 
 .btn--ghost {
   background: transparent;
-  color: var(--color-ink);
-  border: 1px solid var(--color-border-strong);
+  color: var(--color-accent);
+  border: 1.5px solid rgba(0, 87, 255, 0.35);
 }
 
 .btn--ghost:hover {
-  background: rgba(15, 28, 36, 0.04);
-  color: var(--color-ink);
+  background: var(--color-teal-soft);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .btn--ghost-light {

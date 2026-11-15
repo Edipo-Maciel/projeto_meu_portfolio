@@ -11,7 +11,7 @@ export function Capabilities() {
     >
       <div className="container">
         <Reveal>
-          <p className="section__eyebrow">Capacidades</p>
+          <p className="section__eyebrow">{capabilities.eyebrow}</p>
           <h2 id="capabilities-title" className="section__title">
             {capabilities.title}
           </h2>

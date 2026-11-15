@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type TouchEvent, type TransitionEvent } from 'react'
-import { hero, heroCarousel, site } from '../data/content'
+import { hero, heroCarousel } from '../data/content'
 import { BrowserFrame } from './BrowserFrame'
 import { WhatsAppButton } from './WhatsAppButton'
 import './Hero.css'
@@ -179,7 +179,11 @@ function ProductSlide() {
   return (
     <div className="hero__layout">
       <div className="hero__copy">
-        <h1 className="hero__headline">{hero.headline}</h1>
+        <p className="section__eyebrow">{hero.eyebrow}</p>
+        <h1 className="hero__headline">
+          {hero.headline}{' '}
+          <span className="section__title-accent">{hero.headlineAccent}</span>
+        </h1>
         <p className="hero__support">
           Você não precisa de um software pronto e que não resolve seu problema,
           você precisa de um sistema para resolver o{' '}
@@ -187,7 +191,7 @@ function ProductSlide() {
         </p>
         <div className="hero__cta">
           <WhatsAppButton label={hero.ctaPrimary} variant="primary" />
-          <a className="btn btn--ghost" href={site.emailUrl}>
+          <a className="btn btn--ghost" href="#como-trabalho">
             {hero.ctaSecondary}
           </a>
         </div>
@@ -217,8 +221,8 @@ function StorySlideView({ slide }: { slide: StorySlide }) {
         <p className="hero__support">{slide.support}</p>
         <div className="hero__cta">
           <WhatsAppButton label={hero.ctaPrimary} variant="primary" />
-          <a className="btn btn--ghost" href={site.emailUrl}>
-            {hero.ctaSecondary}
+          <a className="btn btn--ghost" href="#contato">
+            Falar no formulário →
           </a>
         </div>
       </div>
