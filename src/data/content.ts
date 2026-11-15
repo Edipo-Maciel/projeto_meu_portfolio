@@ -48,14 +48,14 @@ export const heroCarousel = {
       support:
         'Case real: acompanhamento das entregas em tempo real e faturamento automatizado — sem planilha e sem muro.',
       before: {
-        src: asset('/ramos/stories/transportadora-antes.jpg'),
-        alt: 'Planejamento de entregas em quadro físico com mockups e anotações',
+        src: asset('/ramos/stories/logistica-antes.jpg'),
+        alt: 'Lista de tarefas e anotações em papel no dia a dia da operação',
         label: 'Antes',
         caption: 'Controle no quadro e no papel',
       },
       after: {
-        src: asset('/ramos/stories/transportadora-depois.jpg'),
-        alt: 'Operação de armazém com tablet e logística digital',
+        src: asset('/ramos/stories/logistica-depois.jpg'),
+        alt: 'Armazém organizado com estoque em prateleiras',
         label: 'Depois',
         caption: 'Operação acompanhada no digital',
       },
@@ -67,13 +67,13 @@ export const heroCarousel = {
       support:
         'Quer um sistema de vendas de capinhas e acessórios? Sai do caos das mensagens. Controle estoque, pedidos e atendimento em um sistema só.',
       before: {
-        src: asset('/ramos/stories/celular-antes.jpg'),
-        alt: 'Atendente lidando com celular e laptop ao mesmo tempo',
+        src: asset('/ramos/stories/loja-antes.jpg'),
+        alt: 'Pessoa trabalhando com vários dispositivos e atendimento espalhado',
         label: 'Antes',
         caption: 'Atendimento espalhado no celular',
       },
       after: {
-        src: asset('/ramos/stories/celular-depois.jpg'),
+        src: asset('/ramos/stories/loja-depois.jpg'),
         alt: 'Venda no balcão com pagamento digital e atendimento organizado',
         label: 'Depois',
         caption: 'Venda fluindo no balcão',
@@ -86,16 +86,16 @@ export const heroCarousel = {
       support:
         'Quer um sistema para automatizar a fila da sua oficina? Menos espera, ordem de serviço no fluxo — e cliente saindo satisfeito.',
       before: {
-        src: asset('/ramos/stories/oficina-antes.jpg'),
-        alt: 'Mecânico trabalhando no motor sem apoio digital de fila',
+        src: asset('/ramos/stories/oficina-antes-v2.jpg'),
+        alt: 'Mecânico trabalhando no motor sem apoio de fila digital',
         label: 'Antes',
         caption: 'Oficina no improviso',
       },
       after: {
-        src: asset('/ramos/stories/oficina-depois.jpg'),
-        alt: 'Mecânico usando tablet de diagnóstico na oficina',
+        src: asset('/ramos/stories/oficina-depois-v2.jpg'),
+        alt: 'Oficina organizada com carro em atendimento',
         label: 'Depois',
-        caption: 'Fila e serviço no tablet',
+        caption: 'Oficina organizada',
       },
     },
   ],
