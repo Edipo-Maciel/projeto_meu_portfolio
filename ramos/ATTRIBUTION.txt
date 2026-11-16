@@ -1,0 +1,20 @@
+Fotos de stock (licença livre — uso comercial permitido):
+
+Stories (carrossel) — arquivos atuais:
+- logistica-antes.jpg  — Unsplash photo-1484480974693-6ca0a78fb36b
+- logistica-depois.jpg — Pexels 4483610
+- loja-antes.jpg       — Unsplash photo-1516321318423-f06f85e504b3
+- loja-depois.jpg      — Unsplash photo-1556742049-0cfed4f6a45d
+- oficina-antes-v2.jpg — Pexels 3807329
+- oficina-depois-v2.jpg— Pexels 3806249
+
+Ramos (extras):
+- acessorios-celular.jpg — Pexels 788946
+- barbearia.jpg          — Pexels 1813272
+- mecanica-moto.jpg      — Pexels 2116475
+
+Fontes: https://unsplash.com/license | https://www.pexels.com/license
+Prints em /case são do sistema Maciel Sistemas (próprios).
+
+Arquivos antigos de IA (celular-*, oficina-antes.jpg, oficina-depois.jpg,
+transportadora-*) foram removidos.
